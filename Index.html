@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<!-- Google Analytics (Replace G-XXXXXXXXXX) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #eef2f3, #dfe9f3);
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #1f2937;
+    color: white;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 8px;
+    color: #cbd5e1;
+}
+
+/* Sections */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 25px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+/* Skills */
+.skills span {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1e40af;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background: #1f2937;
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Sheela Gowthami</h1>
+    <p>Aspiring Full Stack Developer</p>
+</header>
+
+<section>
+    <h2>💡 About Me</h2>
+    <p>I am a CSE student learning Full Stack Development and Data Analytics.</p>
+</section>
+
+<section>
+    <h2>🛠 Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Google Analytics</span>
+    </div>
+</section>
+
+<section>
+    <h2>📂 Projects</h2>
+    <p>✔ Smart Expense Tracker</p>
+    <p>✔ Portfolio Website with Analytics</p>
+</section>
+
+<section>
+    <h2>📩 Contact</h2>
+    <button onclick="trackClick()">Download Resume</button>
+</section>
+
+<footer>
+    <p>© 2026 Sheela Gowthami</p>
+</footer>
+
+<script>
+function trackClick() {
+    alert("Resume button clicked!");
+
+    gtag('event', 'resume_click', {
+        'event_category': 'engagement',
+        'event_label': 'Download Resume'
+    });
+}
+</script>
+
+</body>
+</html>
